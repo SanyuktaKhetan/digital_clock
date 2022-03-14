@@ -1,0 +1,248 @@
+body{
+    text-align: center;
+    background-color:#3D087B;
+    font-family:Bauhaus Hv BT ;
+    margin-right:0px !important;
+}
+
+/* .main_grid{
+    margin-top:50px;
+    width:50%;
+    float:none;
+}
+#clock_img{
+    height:120px;
+    width:100px;
+} */
+.grid-container {
+    display: grid;
+    grid-template-columns: 210px 300px auto auto;
+    grid-template-rows: auto 95px;
+    grid-gap: 10px;
+    /* background-color: #2196F3; */
+    padding: 10px;
+    margin-top:50px;
+}
+  
+  .grid-container > div {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+  }
+  
+  .item2 {
+    grid-column-start: 3;
+    margin-top: -20px;
+    grid-column-end: 5;
+    margin-bottom: 20px;
+    z-index: 1;
+    border-radius: 10px;
+    background-color: white;
+}
+  .item3,.item5,.item6,.item7 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    background-color: #FFFFFF;
+    padding:10px !important;
+    border:2px solid #353434 !important;
+  }
+  .item4 {
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 3;
+  }
+  .item10{
+    grid-column-start:1;
+    grid-column-end:3;
+  }
+  .item8{
+    grid-column-start:1;
+    grid-column-end:2;
+    padding:0px 0px !important;
+    /* background-color: none !important; */
+    background: url('AM_svg.png');
+  background-position: center;
+  background-size: 100% 100%;
+  background-repeat: no-repeat !important;
+  }
+
+
+  #clock_img{
+    top: 59px;
+    left: 124px;
+    width: 204px;
+    height: 77px;
+    background-image: url("clock_logo.png");
+    background-position: center;
+    background-size: 100% 100%;
+  }
+
+ #div1{
+  background: url('wake_up.png');
+  background-position: center;
+  background-size: 100% 100%;
+  background-repeat: no-repeat !important;
+  display: inline-block;
+  width: 34px;
+  height: 34px;
+  
+ }
+
+ #part3_2,#part4_2{
+  text-align: center;
+  font: normal normal normal 18px/28px Manrope;
+  letter-spacing: 0px;
+  color: #3D087B;
+  opacity: 1;
+  display: inline-block;
+  padding:20px;
+ }
+
+ #timer1,#timer2,#timer3,#timer4{
+  width: 140px;
+  margin-left: 20px;
+  height:30px;
+  border-radius: 3px;
+ }
+
+ #div2{
+  background: url('lunch_time@2x.png');
+  background-position: center;
+  background-size: 100% 100%;
+  background-repeat: no-repeat !important;
+  display: inline-block;
+  width: 34px;
+  height: 34px;
+
+ }
+ #div3{
+  background: url('nap_time.png');
+  background-position: center;
+  background-size: 100% 100%;
+  background-repeat: no-repeat !important;
+  display: inline-block;
+  width: 34px;
+  height: 34px;
+ }
+ #div4{
+  background: url('nap_time.png');
+  background-position: center;
+  background-size: 100% 100%;
+  background-repeat: no-repeat !important;
+  display: inline-block;
+  width: 34px;
+  height: 34px;
+ }
+
+ #play{
+  /* background: url('AM_svg.png');
+  background-position: center;
+  background-size: 100% 100%;
+  background-repeat: no-repeat !important; */
+  width: 210px;
+  height: 85px;
+  font-size: 25px;
+  background-color: #ffffff00;
+  border:none;
+  vertical-align: middle !important;
+ }
+ 
+ #lbl1 {
+  width: 700px;
+  height: 65px;
+  position: absolute;
+  top: 110;
+  right: 150px;
+  margin: 0px;
+  opacity: 0.5;
+  z-index: -1;
+  background-color: rgb(212, 212, 212);
+  border-radius: 10px;
+}
+#lbl2 {
+  width: 650px;
+  height: 25px;
+  position: absolute;
+  top: 158px;
+  right: 180px;
+  margin: 0px;
+  opacity: 0.5;
+  z-index: -2;
+  background-color: rgb(236 236 236 / 41%);
+  border-radius: 10px;
+}
+#clock_timer h2{
+  width:18%;
+  float:left;
+  color:black;
+  font-weight:900;
+  display:flex;
+  justify-content: center;
+  align-items:center;
+  font-size:20px;
+  padding-top: 25px
+}
+#hr_time{
+  width:20%;
+  float:left;
+  color:rgb(252, 84, 252);
+  font-weight:900;
+  /* display:flex;
+  justify-content: center; */
+  align-items:center;
+  font-size:24px;
+  text-align: center;
+}
+#min_time{
+  width:20%;
+  float:left;
+  color:rgb(252, 84, 252);
+  font-weight:900;
+  /* display:flex;
+  justify-content: center; */
+  align-items:center;
+  font-size:24px;
+}
+#sec_time{
+  width:20%;
+  float:left;
+  color:rgb(252, 84, 252);
+  font-weight:900;
+  /* display:flex;
+  justify-content: center; */
+  align-items:center;
+  font-size:24px;
+}
+#am_pm {
+    width: 10%;
+    height:50%;
+    float: left;
+    color: black;
+    font-weight: 900;
+    align-items: center;
+    font-size: 25px;
+    margin-top: 10px;
+    padding: 5px;
+    background: url('AM_svg.png');
+    background-position: center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat !important;
+}
+
+#output_img{
+  background: url('ballonImg.jpg');
+    background-position: center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat !important;
+}
+.item9 {
+  font-size: 20px !important;
+}
+.item11{
+  grid-column-start: 3;
+  grid-column-end: 5;
+  grid-row-start: 3;
+  grid-row-end: 8;
+}
